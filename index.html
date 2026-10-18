@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Block Gift Scratch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky">
+    <div class="sun"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+  </div>
+
+  <main>
+    <h1 class="title">BLOCK GIFT</h1>
+    <p class="subtitle">Mine the card to reveal your gift code!</p>
+
+    <div class="card" id="card">
+      <div class="card-face">
+        <div class="card-header">
+          <span class="chest"></span>
+          <span>GIFT CARD</span>
+          <span class="gem"></span>
+        </div>
+        <div class="code-label">YOUR CODE</div>
+        <div class="code" id="code">----</div>
+        <div class="card-footer">Redeem it before the creepers do.</div>
+      </div>
+      <canvas id="scratch" aria-label="Scratch area: drag to reveal the code"></canvas>
+    </div>
+
+    <div class="progress-wrap" aria-hidden="true">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="actions">
+      <button class="mc-btn" id="copyBtn" disabled>COPY CODE</button>
+      <button class="mc-btn" id="resetBtn">NEW CARD</button>
+    </div>
+    <p class="hint" id="hint">Click &amp; drag (or swipe) to dig through the grass.</p>
+  </main>
+
+  <div class="ground"></div>
+  <div id="particles"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
