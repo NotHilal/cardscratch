@@ -171,7 +171,7 @@ function reveal() {
   card.classList.add("revealed");
   progressEl.style.width = "100%";
   copyBtn.disabled = false;
-  hintEl.textContent = "Diamonds! You found a gift code!";
+  hintEl.textContent = "Go get the Phantom hilal2!";
   celebrate();
 }
 
